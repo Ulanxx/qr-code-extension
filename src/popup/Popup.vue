@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="title">
-      QR码生成器
+      二维码生成器
     </h1>
 
     <form @submit.prevent="generateQRCode" class="form">
@@ -20,7 +20,7 @@
         type="submit"
         class="button primary-button"
       >
-        生成QR码
+        生成二维码
       </button>
     </form>
 

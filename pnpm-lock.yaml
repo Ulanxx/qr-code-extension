@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      jsqr:
+        specifier: ^1.4.0
+        version: 1.4.0
       qrcode:
         specifier: ^1.5.4
         version: 1.5.4
@@ -417,6 +420,9 @@ packages:
 
   jsonfile@6.1.0:
     resolution: {integrity: sha512-5dgndWOriYSm5cnYaJNhalLNDKOqFwyDB/rr1E9ZsGciGvKPs8R2xYGCacuf3z6K1YKDz182fd+fY3cn3pMqXQ==, tarball: https://registry.npmjs.org/jsonfile/-/jsonfile-6.1.0.tgz}
+
+  jsqr@1.4.0:
+    resolution: {integrity: sha512-dxLob7q65Xg2DvstYkRpkYtmKm2sPJ9oFhrhmudT1dZvNFFTlroai3AWSpLey/w5vMcLBXRgOJsbXpdN9HzU/A==, tarball: https://registry.npmjs.org/jsqr/-/jsqr-1.4.0.tgz}
 
   lightningcss-darwin-arm64@1.29.2:
     resolution: {integrity: sha512-cK/eMabSViKn/PG8U/a7aCorpeKLMlK0bQeNHmdb7qUnBkNPnL+oV5DjJUo0kqWsJUapZsM4jCfYItbqBDvlcA==, tarball: https://registry.npmjs.org/lightningcss-darwin-arm64/-/lightningcss-darwin-arm64-1.29.2.tgz}
@@ -927,6 +933,8 @@ snapshots:
       universalify: 2.0.1
     optionalDependencies:
       graceful-fs: 4.2.11
+
+  jsqr@1.4.0: {}
 
   lightningcss-darwin-arm64@1.29.2:
     optional: true
