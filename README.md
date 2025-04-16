@@ -1,82 +1,87 @@
 # QR Code Extension
 
-A modern Vue browser extension for QR code generation and scanning.
+一个现代化的 Vue 浏览器扩展，用于二维码生成和扫描。
 
-[中文文档](README-zh.md)
+本扩展在 [blog 👉 Chrome 扩展开发实战教程：二维码生成与扫描工具](https://ulanxx-inc.netlify.app/blog/chrome-extension/qr-code.html) 中有详细解读。
 
-## Features
+[English Documentation](README-en.md)
 
-- Generate QR codes from any text or URL input
-- Scan QR codes from images on web pages through context menu
-- Pixel art style UI with retro tech green theme
-- Copy QR code contents to clipboard automatically
-- Download generated QR codes as PNG images
-- Persistent storage of last used text
+## 功能
 
-## Installation
+- 从任何文本或 URL 生成二维码
+- 通过右键菜单扫描网页上的图片中的二维码
+- 像素风格的 UI，采用复古科技绿主题
+- 自动复制二维码内容到剪贴板
+- 将生成的二维码下载为 PNG 图片
+- 持久存储最后使用的文本
 
-1. Clone this repository
-2. Install dependencies: `npm install` or `pnpm install`
-3. Build the extension: `npm run build` or `pnpm run build`
-4. Load the extension in Chrome:
-   - Open `chrome://extensions/`
-   - Enable Developer mode (toggle in the top right)
-   - Click "Load unpacked" and select the `dist` directory
+## 安装
 
-## Usage
+1. 克隆仓库
+2. 安装依赖：`npm install` 或 `pnpm install`
+3. 构建扩展：`npm run build` 或 `pnpm run build`
+4. 在 Chrome 中加载扩展：
+   - 打开 `chrome://extensions/`
+   - 启用开发者模式（右上角的开关）
+   - 点击“加载已解压的扩展”，选择 `dist` 目录
 
-### Generate QR Codes
-1. Click on the extension icon in your browser toolbar
-2. Enter text or a URL in the input field
-3. Click "Generate QR Code"
-4. Use the buttons to download or copy the QR code
+## 使用
 
-### Scan QR Codes from Web Images
-1. Right-click on any image on a webpage that contains a QR code
-2. Select "Scan QR Code" from the context menu
-3. The QR code content will be automatically copied to your clipboard
+### 生成二维码
 
-## Development
+1. 点击浏览器工具栏中的扩展图标
+2. 在输入字段中输入文本或 URL
+3. 点击“生成二维码”
+4. 使用按钮下载或复制二维码
+
+### 从网页图片扫描二维码
+
+1. 右键点击网页上包含二维码的任何图片
+2. 从右键菜单中选择“扫描二维码”
+3. 二维码内容将自动复制到剪贴板
+
+## 开发
 
 ```bash
-# Install dependencies
+# 安装依赖
 npm install
-# or
+# 或
 pnpm install
 
-# Start development with watch mode
+# 启动开发监听模式
 npm run dev
-# or
+# 或
 pnpm run dev
 
-# Build for production
+# 生产构建
 npm run build
-# or
+# 或
 pnpm run build
 ```
 
-The project uses:
-- Vue 3 for the popup UI
-- Vite for bundling
-- jsQR for QR code scanning
-- qrcode.js for QR code generation
+本项目使用：
 
-## Project Structure
+- Vue 3 用于弹出式 UI
+- Vite 用于打包
+- jsQR 用于二维码扫描
+- qrcode.js 用于二维码生成
+
+## 项目结构
 
 ```
 /
-├── dist/             # Compiled extension files
+├── dist/             # 编译后的扩展文件
 ├── src/
-│   ├── background.js   # Background script
-│   ├── content.js      # Content script for QR scanning
+│   ├── background.js   # 后台脚本
+│   ├── content.js      # 用于二维码扫描的内容脚本
 │   ├── popup/
-│       ├── Popup.vue     # Popup UI component
-│       ├── popup.js     # Popup entry point
-├── popup.html       # Popup HTML
-├── script/          # Build scripts
-├── vite.config.js   # Vite configuration
+│       ├── Popup.vue     # 弹出式 UI 组件
+│       ├── popup.js     # 弹出式入口点
+├── popup.html       # 弹出式 HTML
+├── script/          # 构建脚本
+├── vite.config.js   # Vite 配置
 ```
 
-## License
+## 许可证
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT 许可证
